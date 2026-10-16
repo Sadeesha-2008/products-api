@@ -33,7 +33,11 @@ public class ProductService {
         products.removeIf(p -> p.getId().equals(id));
     }
 
-
+    public List<Product> findByName(String name){
+        return products.stream()
+                .filter(p -> p.getName().equals((name)))
+                .toList();
+    }
 
 
 
