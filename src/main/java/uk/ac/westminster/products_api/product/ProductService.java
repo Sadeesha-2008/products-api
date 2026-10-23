@@ -14,7 +14,7 @@ public class ProductService {
     private Long nextId = 1L;
 
     public ProductService(){
-        products.add(new DigitalProduct(nextId++ , "Clean code(E-book)" "/download/clean-code.pdf", 4.2));
+        products.add(new DigitalProduct(nextId++ , "Clean code(E-book)",99.00,"/download/clean-code.pdf", 4.2));
 
         products.add(new PhysicalProducts(nextId++, "27-inch Monitor", 249.99 , 5.2, "61cm * 41cm* 18cm"));
     }
